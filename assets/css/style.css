@@ -1,0 +1,37 @@
+* {
+    color: white;
+    text-shadow: black 0 0 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Body */
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, white, #11ccee 10%);
+    background-size: cover;
+}
+header {
+    text-align: center;
+}
+header input {
+    width: 50%;
+    color: black;
+    text-shadow: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* Footer */
+footer {
+    padding: 10px;
+    margin-top: 5%;
+    text-align: center;
+}
+/* Copyright */
+h4 {
+    margin: auto;
+}
+h5 {
+    margin: auto;
+}
