@@ -13,9 +13,17 @@ header {
     text-align: center;
 }
 header input {
-    width: 50%;
     color: black;
     text-shadow: none;
+}
+#cityInput {
+    width: 30%;
+}
+#stateInput{
+    width: 10%;
+}
+#countryInput{
+    width: 10%;
 }
 main {
     display: flex;
@@ -23,14 +31,19 @@ main {
     text-align: center;
 }
 /* Footer */
-footer {
-    padding: 10px;
+footer{
     margin-top: 5%;
     text-align: center;
+}
+footer *{
+    padding: 5px;
 }
 /* Copyright */
 h4 {
     margin: auto;
+}
+h4 a:hover {
+    text-shadow: white 0 0 2px;
 }
 h5 {
     margin: auto;
