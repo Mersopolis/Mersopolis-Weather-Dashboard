@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather Dashboard</title>
-        <link rel="stylesheet" href="./assets/css/normalize.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather Dashboard</title>
+      <link rel="stylesheet" href="./assets/css/normalize.css" />
+      <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <!--Body-->
     <body>
         <!--Header-->
         <header>
-            <h1>Weather Dashboard</h1>
-            <input id="cityInput" placeholder="City Name (required)">
-            <input id="stateInput" placeholder="State Code">
-            <input id="countryInput" placeholder="Country Code">
-            <button id="searchButton">Search</button>
-            <hr/>
+          <h1>Weather Dashboard</h1>
+          <input id="cityInput" placeholder="City Name (required)">
+          <input id="stateInput" placeholder="State Code">
+          <input id="countryInput" placeholder="Country Code">
+          <button id="searchButton">Search</button>
+          <hr/>
         </header>
         <!--Main-->
         <main>
-            <div id="current">
-                <h2>Current Weather</h2>
-            </div>
-            <div id="forecast">
-                <h2>Forecast</h2>
-            </div>
+          <div>
+            <h2 id="cityName"></h2>
+          </div>
+          <div id="current">
+            <h3>Current Weather</h3>
+          </div>
+          <hr/>
+          <div id="forecast">
+            <h3>Forecast</h3>
+          </div>
         </main>
         <!--Footer-->
         <footer>
-            <!--Copyright-->
-            <h4>Website made by Devon Ethington</h4>
-            <h5>&copy; 2022 Devon Ethington</h5>
-            <h4>Weather info provided by <a href="https://openweathermap.org/">OpenWeather</a></h4>
+          <!--Copyright-->
+          <h5>Website made by Devon Ethington</h5>
+          <h6>&copy; 2022 Devon Ethington</h6>
+          <h5>Weather info provided by <a href="https://openweathermap.org/">OpenWeather</a></h5>
         </footer>
         <script src="./assets/js/script.js"></script>
     </body>
