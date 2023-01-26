@@ -9,6 +9,7 @@ body {
     background-image: linear-gradient(to bottom, white, #11ccee 10%);
     background-size: cover;
 }
+/* Header */
 header {
     text-align: center;
 }
@@ -25,6 +26,7 @@ header input {
 #countryInput{
     width: 10%;
 }
+/* Main */
 main {
     display: flex;
     flex-direction: column;
@@ -41,6 +43,16 @@ main hr {
 }
 h4 {
     margin: 0;
+}
+.forecastDay {
+    display: flex;
+    flex-direction: row;
+    border:  white solid 2px;
+    border-radius: 5px;
+}
+.forecastDaySection {
+    border: white dashed 1px;
+    border-radius: 5px;
 }
 /* Footer */
 footer{
