@@ -73,7 +73,7 @@ function GeoSearch() {
     // Defines weatherSearch function
     function weatherSearch() {
       // Gets current weather data for given coordinates
-      fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=apiKey")
+      fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=" + apiKey)
       // Parses response into objects and arrays
       .then(function (response2) {
         return response2.json();
@@ -103,7 +103,7 @@ function GeoSearch() {
     // Defines forecastSearch function
     function forecastSearch() {
       // Gets forecast data for given coordinates
-      fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=apiKey")
+      fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=" + apiKey)
       // Parses response into objects and arrays
       .then(function (response3) {
         return response3.json();
