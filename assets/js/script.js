@@ -32,6 +32,9 @@ setInterval(displayDate);
 var cityLat = "";
 var cityLon = "";
 
+// Defines apiKey variable
+var apiKey = "2fea0200f5967d6f38b0227977c70412";
+
 // Defines GeoSearch function
 function GeoSearch() {
   // Stops function if no city name input
@@ -41,7 +44,7 @@ function GeoSearch() {
   }
   else {
     // Fetches city data
-    fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput.value + "," + stateInput.value + "," + countryInput.value + "&limit=1&appid=2fea0200f5967d6f38b0227977c70412")
+    fetch("https://api.openweathermap.org/geo/1.0/direct?q=" + cityInput.value + "," + stateInput.value + "," + countryInput.value + "&limit=1&appid=" + apiKey)
       // Parses response into objects and arrays
       .then(function (response) {
         return response.json();
@@ -70,7 +73,7 @@ function GeoSearch() {
     // Defines weatherSearch function
     function weatherSearch() {
       // Gets current weather data for given coordinates
-      fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=2fea0200f5967d6f38b0227977c70412")
+      fetch("https://api.openweathermap.org/data/2.5/weather?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=apiKey")
       // Parses response into objects and arrays
       .then(function (response2) {
         return response2.json();
@@ -100,7 +103,7 @@ function GeoSearch() {
     // Defines forecastSearch function
     function forecastSearch() {
       // Gets forecast data for given coordinates
-      fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=2fea0200f5967d6f38b0227977c70412")
+      fetch("https://api.openweathermap.org/data/2.5/forecast?lat=" + cityLat + "&lon=" + cityLon + "&units=imperial&appid=apiKey")
       // Parses response into objects and arrays
       .then(function (response3) {
         return response3.json();
