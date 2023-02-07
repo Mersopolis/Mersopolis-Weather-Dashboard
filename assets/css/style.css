@@ -32,6 +32,23 @@ main {
     flex-direction: column;
     text-align: center;
 }
+/* Mid Section */
+#midSection {
+    display: flex;
+}
+/* Search History */
+#searchHistory {
+    width: 30%;
+    text-align: left;
+}
+li:hover {
+    text-shadow: white 0 0 2px;
+    cursor: pointer;
+}
+/* Current Weather */
+#cityWeather {
+    width: 70%;
+}
 h2, h3 {
     margin: 10px;
 }
@@ -44,6 +61,7 @@ main hr {
 h4 {
     margin: 0;
 }
+/* Forecast */
 .forecastDay {
     display: flex;
     flex-direction: row;

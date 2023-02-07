@@ -20,22 +20,40 @@
         </header>
         <!--Main-->
         <main>
-          <div>
-            <h2 id="cityName"></h2>
-            <h2 id="currentDate"></h2>
-          </div>
-          <div id="current">
-            <h3>Current Weather</h3>
-            <img id="currentWeatherIcon">
-            <h4 id="currentIconCaption"></h4>
-            <h2 id="currentTemp"></h2>
-            <h3 id="currentHumidity"></h3>
-            <h3 id="currentWind"></h3>
+          <!-- Mid Section -->
+          <div id="midSection">
+            <!-- Search History -->
+            <section id="searchHistory">
+              <h3>Search History</h3>
+              <hr/>
+              <ul>
+                
+              </ul>
+            </section>
+            <section id="cityWeather">
+              <!-- City -->
+              <div>
+                <h2 id="cityName"></h2>
+                <h2 id="currentDate"></h2>
+              </div>
+              <!-- Current Weather -->
+              <div id="current">
+                <h3>Current Weather</h3>
+                <img id="currentWeatherIcon">
+                <h4 id="currentIconCaption"></h4>
+                <h2 id="currentTemp"></h2>
+                <h3 id="currentHumidity"></h3>
+                <h3 id="currentWind"></h3>
+              </div>
+            </section>
           </div>
           <hr/>
-          <div id="forecast">
+          <!-- Forecast -->
+          <section id="forecast">
             <h3>Forecast</h3>
+            <!-- Forecast Day 1 -->
             <div class="forecastDay" id="forecastDay1">
+              <!-- Forecast Day 1 Section 1 -->
               <div class="forecastDaySection forecastSection1">
                 <h3 class="forecastSectionDay"></h3>
                 <img class="forecastSectionWeatherIcon">
@@ -44,6 +62,7 @@
                 <h4 class="forecastSectionHumidity"></h4>
                 <h4 class="forecastSectionWind"></h4>
               </div>
+              <!-- Forecast Day 1 Section 2 -->
               <div class="forecastDaySection forecastSection2">
                 <h3 class="forecastSectionDay"></h3>
                 <img class="forecastSectionWeatherIcon">
@@ -102,6 +121,7 @@
               </div>
             </div>
             
+            <!-- Forecast Day 2 -->
             <div class="forecastDay" id="forecastDay2">
               <div class="forecastDaySection forecastSection1">
                 <h3 class="forecastSectionDay"></h3>
@@ -168,6 +188,7 @@
                 <h4 class="forecastSectionWind"></h4>
               </div>
             </div>
+
             <div class="forecastDay" id="forecastDay3">
               <div class="forecastDaySection forecastSection1">
                 <h3 class="forecastSectionDay"></h3>
@@ -234,6 +255,7 @@
                 <h4 class="forecastSectionWind"></h4>
               </div>
             </div>
+
             <div class="forecastDay" id="forecastDay4">
               <div class="forecastDaySection forecastSection1">
                 <h3 class="forecastSectionDay"></h3>
@@ -300,6 +322,7 @@
                 <h4 class="forecastSectionWind"></h4>
               </div>
             </div>
+            
             <div class="forecastDay" id="forecastDay5">
               <div class="forecastDaySection forecastSection1">
                 <h3 class="forecastSectionDay"></h3>
@@ -366,7 +389,7 @@
                 <h4 class="forecastSectionWind"></h4>
               </div>
             </div>
-          </div>
+          </section>
         </main>
         <!--Footer-->
         <footer>
