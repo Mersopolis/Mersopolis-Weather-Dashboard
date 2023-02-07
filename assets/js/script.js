@@ -84,7 +84,9 @@ function getSearchStorage() {
   }
   // Logs a message to the console if there is no search storage
   else {
-    console.log("getSearchStorage failure");
+    console.log("No storage found");
+    // Sets searchHistory array as an item in localStorage
+    localStorage.setItem("searchStorage", JSON.stringify(searchHistory));
   }
 }
 // Runs getSearchStorage function on page load
